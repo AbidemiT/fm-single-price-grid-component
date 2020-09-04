@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+$cyan: hsl(179, 62%, 43%);
+$lightCyan: hsla(179, 62%, 43%, 0.555);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$white: #fff;
+$grayishBlue: hsl(218, 22%, 67%);
+$karla: 'Karla', sans-serif;
+
+$mb1: 1.5rem;
+$p1: 1.5rem;
+
+
+$mobile:  460px;
+$desktop: 1440px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$mobile}) and (max-width: #{$desktop}) {
+        @content;
+    }
+}

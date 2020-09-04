@@ -1,0 +1,246 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  font-family: $karla;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@include mobile {
+  .container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: $lightGray;
+    padding: 3rem 1rem;
+
+    .row {
+      box-shadow: 3px 2px 5px 5px #ffffff40;
+      .top-row {
+        background: $white;
+        padding: $p1;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+
+        .heading {
+          font-weight: 700;
+          color: $cyan;
+          margin-bottom: $mb1;
+          font-size: 1.2rem;
+        }
+        .sub-heading {
+          color: $brightYellow;
+          line-height: 1.3rem;
+          margin-bottom: $mb1;
+        }
+
+        .p-content {
+          color: $grayishBlue;
+          word-spacing: 0.2rem;
+          line-height: 1.5rem;
+          font-size: 0.8rem;
+        }
+      }
+      .bottom-row {
+        .first-col {
+          background: $cyan;
+          padding: $p1;
+          color: $white;
+
+          .heading {
+            margin-bottom: $mb1;
+            font-size: 1.2rem;
+          }
+          .price-month {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+
+            .price {
+              font-size: 2rem;
+              font-weight: 700;
+            }
+            .month {
+              margin-left: 0.5rem;
+              font-size: 1rem;
+              color: $lightGray;
+            }
+          }
+          .full-access {
+            color: $lightGray;
+            margin-bottom: 2rem;
+          }
+
+          .cta {
+            display: block;
+            border-radius: 0.2rem;
+            padding: 0.7rem 0;
+            text-decoration: none;
+            color: $white;
+            background: $brightYellow;
+            text-align: center;
+            box-shadow: 1px 1px 5px 0px #00000080;
+          }
+        }
+        .second-col {
+          background: $lightCyan;
+          color: $white;
+          padding: $p1;
+          border-bottom-left-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+
+          .heading {
+            margin-bottom: $mb1;
+            font-size: 1.2rem;
+          }
+
+          .pecks {
+            li {
+              margin-bottom: 0.5rem;
+
+              a {
+                text-decoration: none;
+                color: $lightGray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: $lightGray;
+
+    .row {
+      box-shadow: 3px 2px 5px 5px #ffffff40;
+      width: 65%;
+      margin: 0 auto;
+      .top-row {
+        background: $white;
+        padding: $p1;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+
+        .heading {
+          font-weight: 700;
+          color: $cyan;
+          margin-bottom: $mb1;
+          font-size: 1.2rem;
+        }
+        .sub-heading {
+          color: $brightYellow;
+          line-height: 1.3rem;
+          margin-bottom: $mb1;
+        }
+
+        .p-content {
+          color: $grayishBlue;
+          word-spacing: 0.2rem;
+          line-height: 1.5rem;
+          font-size: 0.8rem;
+        }
+      }
+      .bottom-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .first-col {
+          background: $cyan;
+          padding: $p1;
+          color: $white;
+          border-bottom-left-radius: 0.3rem;
+
+          .heading {
+            margin-bottom: $mb1;
+            font-size: 1.2rem;
+          }
+          .price-month {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+
+            .price {
+              font-size: 2rem;
+              font-weight: 700;
+            }
+            .month {
+              margin-left: 0.5rem;
+              font-size: 1rem;
+              color: $lightGray;
+            }
+          }
+          .full-access {
+            color: $lightGray;
+            margin-bottom: 2rem;
+          }
+
+          .cta {
+            display: block;
+            border-radius: 0.2rem;
+            padding: 0.7rem 0;
+            text-decoration: none;
+            color: $white;
+            background: $brightYellow;
+            text-align: center;
+            box-shadow: 1px 1px 5px 0px #00000080;
+          }
+        }
+        .second-col {
+          background: $lightCyan;
+          color: $white;
+          padding: $p1;
+          border-bottom-right-radius: 0.3rem;
+
+          .heading {
+            margin-bottom: $mb1;
+            font-size: 1.2rem;
+          }
+
+          .pecks {
+            li {
+              margin-bottom: 0.5rem;
+
+              a {
+                text-decoration: none;
+                color: $lightGray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

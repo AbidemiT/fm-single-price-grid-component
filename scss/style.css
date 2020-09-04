@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 460px) {
+  .container {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #e5eff5;
+    padding: 3rem 1rem;
+  }
+  .container .row {
+    -webkit-box-shadow: 3px 2px 5px 5px #ffffff40;
+            box-shadow: 3px 2px 5px 5px #ffffff40;
+  }
+  .container .row .top-row {
+    background: #fff;
+    padding: 1.5rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+  .container .row .top-row .heading {
+    font-weight: 700;
+    color: #2ab2af;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .top-row .sub-heading {
+    color: #c0df34;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  .container .row .top-row .p-content {
+    color: #98a6bd;
+    word-spacing: 0.2rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .container .row .bottom-row .first-col {
+    background: #2ab2af;
+    padding: 1.5rem;
+    color: #fff;
+  }
+  .container .row .bottom-row .first-col .heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .bottom-row .first-col .price-month {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .row .bottom-row .first-col .price-month .price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .container .row .bottom-row .first-col .price-month .month {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #e5eff5;
+  }
+  .container .row .bottom-row .first-col .full-access {
+    color: #e5eff5;
+    margin-bottom: 2rem;
+  }
+  .container .row .bottom-row .first-col .cta {
+    display: block;
+    border-radius: 0.2rem;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    color: #fff;
+    background: #c0df34;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 5px 0px #00000080;
+            box-shadow: 1px 1px 5px 0px #00000080;
+  }
+  .container .row .bottom-row .second-col {
+    background: rgba(42, 178, 175, 0.555);
+    color: #fff;
+    padding: 1.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  .container .row .bottom-row .second-col .heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .bottom-row .second-col .pecks li {
+    margin-bottom: 0.5rem;
+  }
+  .container .row .bottom-row .second-col .pecks li a {
+    text-decoration: none;
+    color: #e5eff5;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 1440px) {
+  .container {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #e5eff5;
+  }
+  .container .row {
+    -webkit-box-shadow: 3px 2px 5px 5px #ffffff40;
+            box-shadow: 3px 2px 5px 5px #ffffff40;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .container .row .top-row {
+    background: #fff;
+    padding: 1.5rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+  .container .row .top-row .heading {
+    font-weight: 700;
+    color: #2ab2af;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .top-row .sub-heading {
+    color: #c0df34;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  .container .row .top-row .p-content {
+    color: #98a6bd;
+    word-spacing: 0.2rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .container .row .bottom-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container .row .bottom-row .first-col {
+    background: #2ab2af;
+    padding: 1.5rem;
+    color: #fff;
+    border-bottom-left-radius: 0.3rem;
+  }
+  .container .row .bottom-row .first-col .heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .bottom-row .first-col .price-month {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .row .bottom-row .first-col .price-month .price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .container .row .bottom-row .first-col .price-month .month {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #e5eff5;
+  }
+  .container .row .bottom-row .first-col .full-access {
+    color: #e5eff5;
+    margin-bottom: 2rem;
+  }
+  .container .row .bottom-row .first-col .cta {
+    display: block;
+    border-radius: 0.2rem;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    color: #fff;
+    background: #c0df34;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 5px 0px #00000080;
+            box-shadow: 1px 1px 5px 0px #00000080;
+  }
+  .container .row .bottom-row .second-col {
+    background: rgba(42, 178, 175, 0.555);
+    color: #fff;
+    padding: 1.5rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  .container .row .bottom-row .second-col .heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container .row .bottom-row .second-col .pecks li {
+    margin-bottom: 0.5rem;
+  }
+  .container .row .bottom-row .second-col .pecks li a {
+    text-decoration: none;
+    color: #e5eff5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
